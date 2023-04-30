@@ -2,7 +2,6 @@ name: build
 
 on:
   workflow_call:
-  
   secrets:
     registry_username:
       required: true
@@ -11,7 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:      
-      - uses: actions/checkout@v3
+      - name: check
+        uses: actions/checkout@v3
       - name: this is the username
         run: |
           echo  ${{secrets.registry_username}}
