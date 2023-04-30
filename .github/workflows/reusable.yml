@@ -14,6 +14,6 @@ jobs:
         run: echo Hello, world!
 
   docker:
-    uses: aristidejoudubois/simpletestreusable/.github/workflows/build.yml@main
+    uses: aristidejoudubois/simpletestreusable/.github/workflows/build.yml@master
     secrets:
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
